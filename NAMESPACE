@@ -1,0 +1,77 @@
+import(methods)
+
+import(BiocGenerics)
+import(IRanges)
+import(GenomicRanges)
+import(Biostrings)
+
+exportClasses(
+    GenomeDescription,
+    SNPlocs,
+    InjectSNPsHandler,
+    BSgenome,
+    GenomeData, GenomeDataList,
+
+    ## BSgenomeForge classes:
+    BSgenomeDataPkgSeed
+)
+
+export(
+    ## Non-generic functions:
+    installed.genomes, available.genomes,
+    GenomeDescription,
+    newSNPlocs,
+    BSgenome,
+    installed.SNPs, available.SNPs,
+    bsapply,
+    GenomeData, GenomeDataList,
+
+    ## Generic functions:
+    organism, species, provider, providerVersion,
+    releaseDate, releaseName, bsgenomeName,
+
+    referenceGenome, compatibleGenomes,
+    snpcount, snplocs,
+    snpid2loc, snpid2alleles, snpid2grange,
+
+    sourceUrl,
+    SNPlocs, SNPlocs_pkgname, SNPcount,
+    mseqnames,
+    masknames,
+    injectSNPs,
+    gdapply, gdApply,
+    gdReduce, gdreduce,
+
+    ## BSgenomeForge functions:
+    forgeSeqlengthsFile,
+    forgeSeqFiles,
+    forgeMasksFiles,
+    forgeBSgenomeDataPkg
+)
+
+exportMethods(
+    ## Methods for generics defined elsewhere:
+    names, show, length, "[[", "$", score,
+    getSeq, matchPWM, countPWM, vmatchPattern, vcountPattern,
+
+    ## Methods for generics defined in this package:
+    organism, species, provider, providerVersion,
+    releaseDate, releaseName, bsgenomeName,
+    seqinfo, seqnames, seqlengths, isCircular,
+
+    referenceGenome, compatibleGenomes,
+    snpcount, snplocs,
+    snpid2loc, snpid2alleles, snpid2grange,
+
+    sourceUrl,
+    SNPlocs, SNPlocs_pkgname, SNPcount,
+    mseqnames,
+    masknames,
+    injectSNPs,
+    gdapply,
+    gdReduce,
+
+    ## BSgenomeForge methods:
+    forgeBSgenomeDataPkg
+)
+
