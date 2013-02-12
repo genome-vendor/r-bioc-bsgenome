@@ -1,0 +1,14 @@
+Source: r-bioc-bsgenome
+Section: gnu-r
+Priority: optional
+Maintainer: The Genome Institute <gmt@genome.wustl.edu>
+Build-Depends: r-base-dev, r-base-core, debhelper (>> 4.1.0), r-bioc-biocgenerics (>= 0.1.2), r-bioc-iranges (>= 1.13.6), r-bioc-genomicranges (>= 1.7.5), r-bioc-biostrings (>= 2.23.3)
+Homepage: http://www.bioconductor.org/packages/2.11/bioc/html/BSgenome.html
+
+Package: r-bioc-bsgenome
+Architecture: all
+Maintainer: H. Pages <hpages@fhcrc.org>
+Description: Infrastructure shared by all the Biostrings-based genome data packages
+License: Artistic2.0
+Depends: r-base-core, r-bioc-biocgenerics (>= 0.1.2), r-bioc-iranges (>= 1.13.6), r-bioc-genomicranges (>= 1.7.5), r-bioc-biostrings (>= 2.23.3)
+
